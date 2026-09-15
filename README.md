@@ -5,6 +5,7 @@ Första statiska versionen av beyondnorms.se.
 ## Innehåll
 
 - `index.html` — första one-page-sidan
+- `logo.svg` — enkel logotypfil för preview- och första publiceringsspåret
 
 ## Publicering
 
