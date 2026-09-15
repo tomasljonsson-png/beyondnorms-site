@@ -4,12 +4,15 @@ Första statiska versionen av beyondnorms.se.
 
 ## Innehåll
 
-- `index.html` — första one-page-sidan
-- `logo.svg` — enkel logotypfil för preview- och första publiceringsspåret
+- `index.html` — arbetskopia i repo-roten
+- `logo.svg` — enkel logotypfil i repo-roten
+- `dist/index.html` — deploybar första one-page-sida för Cloudflare-builden
+- `dist/logo.svg` — deploybar logotyp för Cloudflare-builden
+- `wrangler.jsonc` — styr att `npx wrangler versions upload` publicerar innehållet i `dist/`
 
 ## Publicering
 
-Repo:t är tänkt att användas med Cloudflare Pages-projektet `beyondnorms-site`.
+Repo:t används med Cloudflare Pages/Workers-projektet `beyondnorms-site`.
 
 ## Kontakt på sidan
 
