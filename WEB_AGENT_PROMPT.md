@@ -1,37 +1,39 @@
-# Prompt för ClickUp-webbagent — Beyond Norms
+# ClickUp web-agent prompt — Beyond Norms
 
-Arbeta **endast** med projektet Beyond Norms.
+Work **only** on Beyond Norms.
 
-## Projektidentitet
-- Varumärke: **Beyond Norms**
-- Webbplats: `beyondnorms.se`
-- GitHub-repo: `tomasljonsson-png/beyondnorms-site`
-- Cloudflare-projekt: `beyondnorms-site`
-- Positionering: Thomas är **energikonsult för fastigheter**.
+## Project identity
+- Brand: **Beyond Norms**
+- Website: `beyondnorms.se`
+- GitHub repo: `tomasljonsson-png/beyondnorms-site`
+- Cloudflare project: `beyondnorms-site`
+- Positioning: Thomas is an **energy consultant for real estate**.
 
-## Källa och uttryck
-Utgå från `BEYOND_NORMS_SPEC.md` och befintliga filer i repot. Sidan ska tydligt visa sambandet mellan energi, energisamordning i byggprojekt, bygg- och fastighetsteknik samt data/digitalisering.
+## Source and expression
+Use `BEYOND_NORMS_SPEC.md` and the existing repo files. Present the relationship between energy, energy coordination in construction projects, building systems and property data/digitalisation.
 
-Håll uttrycket professionellt, precist och avskalat: varm neutral bakgrund, mörk Beyond Norms-logotyp, mjukt rundade ytor, gott om luft, tydlig typografi och korta texter. Använd ordet energikonsult hellre än energikonsulting.
+The site is bilingual: Swedish at `/sv/` and English at `/en/`, with a clear language switch linking equivalent pages. Keep the root route Swedish. Preserve parallel content and structure across both languages.
 
-Undvik generiska konsultbolagsfraser, långa presentationer, stockbilder, tjänsteikoner och buzzwords. Ta inte med Brick, REB, Azure/Fabric, LoRa, kundnamn, referenser, certifieringar, resultat eller besparingssiffror om Thomas inte först godkänt dem.
+Use a precise, professional, restrained tone: warm neutral background, dark Beyond Norms branding, rounded surfaces, generous whitespace and short copy. Prefer “energikonsult” over “energikonsulting” in Swedish.
 
-Första versionen är svensk. Ingen CTA-knapp och inget formulär behövs. Behåll kontaktvägarna som vanliga länkar:
-- E-post: `thomas.l.bn@outlook.com`
-- Telefon: `+66 81 045 51 73`
+Do not add generic consulting copy, long biographies, stock photos, generic service icons, buzzwords, customer names, references, certifications, performance claims or savings figures unless Thomas approves them. No CTA button or form is needed; use direct contact links only.
+
+Contact links:
+- Email: `thomas.l.bn@outlook.com`
+- Phone: `+66 81 045 51 73`
 - WhatsApp: `+46 73 944 13 50`
 
-## Säker arbetsmodell
-1. Kontrollera att uppgiften uttryckligen gäller Beyond Norms och använd bara repot ovan.
-2. Läs befintlig kod före ändring.
-3. Arbeta på separat branch från `main`; ändra aldrig `main` direkt.
-4. Gör bara efterfrågade ändringar och skapa PR mot `main`.
-5. Kontrollera Cloudflare Preview-builden och dela endast en verifierad Preview-URL.
-6. Vänta på Thomas uttryckliga **Go Live** innan merge/publicering.
-7. Ändra inte Cloudflare-konfiguration, DNS eller domänkoppling på eget initiativ.
-8. Blanda aldrig filer, copy, branches eller PR:er med You, Me &.
+## Safe workflow
+1. Confirm the request is for Beyond Norms and use only the repo above.
+2. Read existing code before changes.
+3. Work on a separate branch from `main`; never change `main` directly.
+4. Make only requested changes and open a PR to `main`.
+5. Verify Cloudflare Preview and share only a verified preview URL.
+6. Wait for Thomas's explicit “Go Live” before merging or publishing live.
+7. Do not change Cloudflare configuration, DNS or domain routing independently.
+8. Never mix assets, copy, branches or PRs with You, Me &.
 
-Nuvarande Cloudflare-build använder `npx wrangler versions upload`; `wrangler.jsonc` pekar ut `./dist` som statisk asset-katalog. Ändra inte deploykonfigurationen utan att kontrollera behovet och buildresultatet.
+Cloudflare currently uses `npx wrangler versions upload`; `wrangler.jsonc` points to `./dist` as its static asset directory. Do not change deployment configuration without first checking why it is necessary and verifying the build result.
 
-## Leverans
-Svara kort på svenska med vad som ändrats, PR-länk, verifierad Preview-URL (eller tydligt besked att den ännu saknas) och status att invänta Thomas godkännande/Go Live.
+## Delivery
+Reply briefly in Swedish with changes, PR link, verified Preview URL (or clearly state it is unavailable), and that approval/Go Live is pending.

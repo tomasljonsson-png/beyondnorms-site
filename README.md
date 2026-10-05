@@ -1,23 +1,25 @@
-# Beyond Norms — previewpaket
+# Beyond Norms — bilingual preview
 
-Svensk första presentation av Thomas som energikonsult för fastigheter.
+A Swedish and English presentation of Thomas as an energy consultant for real estate.
 
-## Filer
-- `dist/index.html` — startsida på `/`
-- `dist/sv/index.html` — svensk rutt på `/sv/`
-- `dist/logo.svg` — logotyp för publiceringsfilerna
-- `wrangler.jsonc` — anger `dist/` som statisk asset-katalog
-- `BEYOND_NORMS_SPEC.md` — innehålls- och designkälla
-- `WEB_AGENT_PROMPT.md` — startprompt och arbetsregler för ClickUp-webbagent
-- `index.html` och `logo.svg` i repo-roten — arbetskopior för lokal granskning
+## Files
+- `dist/index.html` — Swedish default page at `/`
+- `dist/sv/index.html` — Swedish page at `/sv/`
+- `dist/en/index.html` — English page at `/en/`
+- `dist/logo.svg` — shared logo
+- `wrangler.jsonc` — static assets configuration pointing to `dist/`
+- `BEYOND_NORMS_SPEC.md` — content and design source
+- `WEB_AGENT_PROMPT.md` — ClickUp web-agent prompt and project-specific release rules
+
+## Language navigation
+Each page includes a compact `SV / EN` switch to its language counterpart. The root route remains Swedish by default.
 
 ## Cloudflare
-Cloudflare Workers & Pages-projektet heter `beyondnorms-site`. Builden använder Wrangler-konfigurationen i `wrangler.jsonc`. Kontrollera PR Preview innan godkännande. En lyckad build-check är inte ensam bekräftelse på att en publik preview-rutt fungerar.
+Workers & Pages project: `beyondnorms-site`. Wrangler uses the config in `wrangler.jsonc`. Verify the PR Preview before approval. A successful build alone does not prove the public route works.
 
-## Kontakt som visas
-- E-post: `thomas.l.bn@outlook.com`
-- Telefon: `+66 81 045 51 73`
+## Contact displayed
+- Email: `thomas.l.bn@outlook.com`
+- Phone: `+66 81 045 51 73`
 - WhatsApp: `+46 73 944 13 50`
 
-## Publiceringssäkerhet
-Ändra inte DNS eller domänpekning, och publicera/merga inte till live utan Thomas uttryckliga **Go Live**.
+Do not change DNS or domain routing, or merge/publish live, without Thomas's explicit “Go Live”.
