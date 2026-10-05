@@ -1,78 +1,61 @@
 # Beyond Norms — första preview-specifikation
 
 ## Projekt
-
 - Varumärke: **Beyond Norms**
 - Webbplats: `beyondnorms.se`
-- GitHub: `tomasljonsson-png/beyondnorms-site`
+- GitHub-repo: `tomasljonsson-png/beyondnorms-site`
 - Cloudflare Workers & Pages: `beyondnorms-site`
-- Ändra inte andra projekt, särskilt inte You, Me &.
+- Projektet hålls helt separat från You, Me &.
 
-## Syfte
+## Syfte och målgrupp
+En kort, professionell presentation av Thomas som **energikonsult för fastigheter**. Den ska tala till fastighetsägare och projektorganisationer som behöver stöd med energi, energisamordning i byggprojekt, fastighetsteknik eller fastighetsdata.
 
-Skapa en kort, professionell första presentation av Thomas som **energikonsult för fastigheter**. Besökaren ska på några sekunder förstå kopplingen mellan energi, bygg- och fastighetsteknik och data, och enkelt hitta kontaktuppgifter.
-
-## Målgrupp
-
-Fastighetsägare och projektorganisationer som behöver stöd inom energi, energisamordning i byggprojekt, tekniska system eller fastighetsdata.
-
-## Budskap
-
-- Primär rubrik: **Energi, teknik och data som fungerar tillsammans.**
+## Kärnbudskap
+- Huvudrubrik: **Energi, teknik och data som fungerar tillsammans.**
 - Positionering: **Energikonsult för fastigheter**.
-- Energisamordning i byggprojekt ska synas som en naturlig del av erfarenheten.
+- Synliggör energisamordning i byggprojekt som en naturlig del av profilen.
 - Visa sambandet: byggprojekt → fastighetsteknik → data → uppföljning.
-- Beskriv kompetens, inte själva webbplatsen.
+- Beskriv kompetensen, inte själva webbplatsen.
 
 ## Sidstruktur
-
 1. Header med Beyond Norms-logotyp.
-2. Hero med positionering och en kort konkret ingress.
-3. Tre kompetensområden:
-   - Energi
-   - Bygg & fastighetsteknik
-   - Data & digitalisering
-4. Kort del om spannet från byggprojekt till befintlig fastighet.
-5. Exempel på uppdrag.
+2. Hero med positionering och konkret ingress.
+3. Tre områden: **Energi**, **Bygg & fastighetsteknik**, **Data & digitalisering**.
+4. Kort sektion: **Från byggprojekt till befintlig fastighet**.
+5. **Exempel på uppdrag**.
 6. Kontakt med mail, telefon och WhatsApp.
 7. Enkel footer.
 
-## Designriktning
-
-- Behåll den befintliga visuella familjen: varm neutral bakgrund, mörk Beyond Norms-branding, mjukt rundade paneler och luft.
+## Design och ton
+- Behåll varm neutral bakgrund, mörk Beyond Norms-branding, mjukt rundade paneler och luft.
 - Känsla: senior specialist, inte stort konsultbolag.
-- Stor, tydlig typografi; korta textstycken; tydlig rytm.
-- Ingen stockbild, inga generiska tjänsteikoner, inga överdrivna färgblock och ingen onödig corporate-känsla.
-- Mobil ska vara lättläst och fungera utan horisontell scroll.
-- Respektera `prefers-reduced-motion`.
+- Stor tydlig typografi, korta stycken och lugn läsrytm.
+- Inga stockbilder, generiska tjänsteikoner eller överdrivna färgblock.
+- Mobil ska vara lättläst och fungera utan horisontell scroll; respektera `prefers-reduced-motion`.
+- Första versionen är på svenska.
 
-## Copy och innehåll
-
-- Skriv på svenska i första versionen.
+## Copy-gränser
 - Använd **energikonsult** hellre än **energikonsulting**.
-- Håll sidan kort och konkret.
-- Avancerade meriter/verktyg som Brick, REB, Azure/Fabric och LoRa ska inte ligga på startsidan i denna version.
-- Nämn inte Fabege eller andra kunder/referenser utan uttryckligt klartecken.
-- Undvik resultatlöften, certifieringar, besparingssiffror och andra uppgifter som inte uttryckligen verifierats.
-- Ingen kontaktknapp behövs; vanlig e-post-, telefon- och WhatsApp-länk räcker.
+- Undvik generiska fraser, buzzwords, långa presentationer och ogrundade löften.
+- Nämn inte Brick, REB, Azure/Fabric, LoRa, Fabege eller andra kunder/referenser på startsidan utan separat godkännande.
+- Lägg inte till certifieringar, resultat eller besparingssiffror om de inte uttryckligen verifierats.
+- Ingen knapp eller formulär behövs; använd enkla kontaktlänkar.
 
-## Rutter och build
+## Rutter och Cloudflare-build
+- `dist/index.html` serverar sidan på `/`.
+- `dist/sv/index.html` serverar samma svenska sida på `/sv/`.
+- `dist/logo.svg` är logotypen.
+- `wrangler.jsonc` pekar på `./dist` som statisk asset-katalog.
 
-- `dist/index.html` är svensk startsida.
-- `dist/sv/index.html` är svensk sida på `/sv/`.
-- `dist/logo.svg` är logotypen som används av båda rutterna.
-- `wrangler.jsonc` anger `./dist` som statisk asset-katalog för Cloudflare-builden.
-
-## Kontakt
-
+## Kontaktuppgifter
 - E-post: `thomas.l.bn@outlook.com`
-- Telefon/WhatsApp: `+46 73 944 13 50`
+- Telefon: `+66 81 045 51 73`
+- WhatsApp: `+46 73 944 13 50`
 
 ## Acceptanskriterier
-
-- Sidan laddar från både `/` och `/sv/` i previewmiljön.
-- Logotyp och kontaktlänkar fungerar.
+- `/` och `/sv/` laddar samma svenska presentation i preview.
+- Logotyp, mail-, telefon- och WhatsApp-länkar fungerar.
 - Ingen CTA-knapp eller kontaktformulär finns.
-- Copy säger inte att sidan bara är en enkel första webbversion.
+- Sidan beskriver Thomas arbete, inte att det bara är en första webbversion.
 - Inga ogrundade kund-, resultat- eller certifieringspåståenden förekommer.
-- PR-preview fungerar innan någon ändring mergas eller går live.
+- PR-preview verifieras innan merge; ingen merge eller live-publicering före Thomas uttryckliga **Go Live**.
