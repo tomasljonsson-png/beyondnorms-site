@@ -1,21 +1,27 @@
-# Beyond Norms
+# Beyond Norms — previewpaket
 
-Första statiska versionen av beyondnorms.se.
+Första svenskspår för en enkel konsultpresentation på `beyondnorms.se`.
 
-## Innehåll
+## Filer
 
-- `index.html` — arbetskopia i repo-roten
-- `logo.svg` — enkel logotypfil i repo-roten
-- `dist/index.html` — deploybar första one-page-sida för Cloudflare-builden
-- `dist/logo.svg` — deploybar logotyp för Cloudflare-builden
-- `wrangler.jsonc` — styr att `npx wrangler versions upload` publicerar innehållet i `dist/`
+- `dist/index.html` — startsida på `/`
+- `dist/sv/index.html` — svensk startsida på `/sv/`
+- `dist/logo.svg` — logotyp
+- `wrangler.jsonc` — anger `dist/` som statisk asset-katalog
+- `BEYOND_NORMS_SPEC.md` — innehålls- och designkälla
+- `WEB_AGENT_PROMPT.md` — prompt/arbetsregler för ClickUp-webbagent
 
-## Publicering
+Rotens `index.html` och `logo.svg` är en arbetskopia för enkel lokal granskning.
 
-Repo:t används med Cloudflare Pages/Workers-projektet `beyondnorms-site`.
+## Cloudflare
 
-## Kontakt på sidan
+Cloudflare Workers & Pages-projektet heter `beyondnorms-site`. Buildens deploy-kommando använder Wrangler och konfigurationen i `wrangler.jsonc`. PR-preview ska verifieras innan ändringar godkänns. En lyckad build-check ensam är inte bevis på att en publik preview-rutt fungerar.
 
-- Mail: `thomas.l.bn@outlook.com`
-- WhatsApp: `+46 73 944 13 50`
-- Telefon: `+66 81 045 51 73`
+## Kontakt som visas på sidan
+
+- E-post: `thomas.l.bn@outlook.com`
+- Telefon/WhatsApp: `+46 73 944 13 50`
+
+## Säkerhet
+
+Ändra inte DNS, domänpekning eller publicering till live utan Thomas uttryckliga godkännande. Merg:a inte till `main` före **Go Live**.
