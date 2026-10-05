@@ -3,170 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Energikonsulting i fastighetsbranschen | Beyond Norms</title>
-  <meta name="description" content="Beyond Norms är en enkel sida för Thomas arbete inom energikonsulting i fastighetsbranschen, med tydlig kontakt via mail, WhatsApp och telefon." />
+  <title>Energikonsult för fastigheter | Beyond Norms</title>
+  <meta name="description" content="Energi, bygg- och fastighetsteknik samt data i samspel. Energikonsult för fastighetsägare och projektorganisationer." />
+  <meta name="theme-color" content="#34231d" />
+  <link rel="canonical" href="https://beyondnorms.se/sv/" />
   <style>
-    :root {
-      --bg: #f7f3ee;
-      --surface: #ffffff;
-      --text: #1a1a1a;
-      --muted: #5f5a55;
-      --line: #ddd3c8;
-      --accent: #d58a1f;
-      --accent-2: #a33a2b;
-      --max: 760px;
-      --radius: 18px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-    a {
-      color: inherit;
-      text-underline-offset: 3px;
-    }
-    .wrap {
-      width: min(calc(100% - 32px), var(--max));
-      margin: 0 auto;
-    }
-    header {
-      padding: 28px 0 12px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      color: #f7efe8;
-      background: #351b14;
-      padding: 16px 18px;
-      border-radius: 16px;
-    }
-    .brand svg {
-      width: 34px;
-      height: 34px;
-      flex: 0 0 auto;
-    }
-    .brand-name {
-      font-size: clamp(1.8rem, 4vw, 2.4rem);
-      font-weight: 700;
-      line-height: 1;
-      letter-spacing: -0.02em;
-    }
-    main {
-      padding: 12px 0 48px;
-    }
-    section {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 28px;
-      margin-bottom: 16px;
-    }
-    h1, h2 {
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin: 0 0 14px;
-    }
-    h1 { font-size: clamp(2rem, 5vw, 3.2rem); }
-    h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); }
-    p { margin: 0 0 14px; }
-    p:last-child, ul:last-child { margin-bottom: 0; }
-    .intro {
-      color: var(--muted);
-      font-size: 1.05rem;
-      max-width: 58ch;
-    }
-    .contact-list, .focus-list {
-      list-style: none;
-      padding: 0;
-      margin: 18px 0 0;
-    }
-    .focus-list li, .contact-list li {
-      padding: 10px 0;
-      border-top: 1px solid var(--line);
-    }
-    .focus-list li:first-child, .contact-list li:first-child {
-      border-top: 0;
-      padding-top: 0;
-    }
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 16px;
-      color: var(--accent);
-      font-size: 0.95rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-    footer {
-      padding: 8px 0 40px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-    @media (max-width: 640px) {
-      section { padding: 22px; }
-      .brand { padding: 14px 16px; }
-      .brand-name { font-size: 1.9rem; }
-    }
+    :root { color-scheme:light; --paper:#f5f0e8; --surface:#fbf9f5; --ink:#2b2622; --muted:#71675f; --line:#d7cabc; --brown:#34231d; --amber:#d48a22; --rust:#a33e36; --max:1080px; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Inter,"Segoe UI",Arial,sans-serif; font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-underline-offset:4px; text-decoration-thickness:1px; } a:hover { color:var(--rust); }
+    .wrap { width:min(calc(100% - 40px),var(--max)); margin:0 auto; }
+    .site-header { padding:28px 0 18px; }
+    .brand { display:inline-flex; align-items:center; min-height:68px; padding:11px 19px; border-radius:15px; background:var(--brown); text-decoration:none; }
+    .brand img { display:block; width:238px; height:auto; }
+    main { padding:0 0 52px; }
+    .hero { padding:clamp(42px,8vw,86px) 0 70px; }
+    .eyebrow { margin:0 0 20px; color:#86541d; font-size:14px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    h1,h2,h3 { margin:0; line-height:1.12; letter-spacing:-.035em; }
+    h1 { max-width:850px; font-size:clamp(42px,7vw,78px); font-weight:600; }
+    .lead { max-width:790px; margin:28px 0 0; color:#514840; font-size:clamp(19px,2.3vw,23px); line-height:1.5; }
+    .areas { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:0 0 72px; }
+    .area { min-height:218px; padding:25px 24px 23px; border:1px solid var(--line); border-radius:16px; background:rgba(251,249,245,.78); }
+    .area h2 { margin-bottom:19px; color:var(--brown); font-size:18px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; }
+    .area p { margin:0; color:var(--muted); font-size:16px; line-height:1.65; }
+    .story { display:grid; grid-template-columns:minmax(220px,.82fr) minmax(0,1.18fr); gap:clamp(30px,7vw,88px); align-items:start; padding:50px 0 62px; border-top:1px solid var(--line); }
+    .story h2,.examples h2,.contact h2 { max-width:440px; font-size:clamp(30px,4vw,43px); font-weight:600; }
+    .story p { max-width:650px; margin:0; color:#514840; font-size:18px; }
+    .examples { padding:0 0 68px; } .examples h2 { margin-bottom:24px; }
+    .examples-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 32px; margin:0; padding:0; list-style:none; }
+    .examples-list li { padding:15px 0; border-top:1px solid var(--line); font-size:17px; }
+    .contact { display:grid; grid-template-columns:minmax(0,1fr) minmax(250px,.7fr); gap:32px; align-items:end; padding:36px; border-radius:18px; background:var(--brown); color:var(--paper); }
+    .contact h2 { margin-bottom:15px; } .contact p { margin:0; color:#d9c9b8; }
+    .contact-details { display:grid; gap:8px; justify-self:end; font-size:16px; }
+    .contact-details a { color:var(--paper); } .contact-details a:hover { color:#f0b64c; }
+    footer { padding:24px 0 8px; color:var(--muted); font-size:15px; }
+    @media(max-width:760px) { .wrap { width:min(calc(100% - 32px),var(--max)); } .hero { padding:46px 0 48px; } .areas { grid-template-columns:1fr; gap:10px; margin-bottom:48px; } .area { min-height:0; } .story { grid-template-columns:1fr; gap:18px; padding:36px 0 44px; } .examples { padding-bottom:48px; } .contact { grid-template-columns:1fr; padding:27px; } .contact-details { justify-self:start; } }
+    @media(max-width:480px) { body { font-size:16px; } .site-header { padding-top:20px; } .brand { min-height:56px; padding:9px 13px; } .brand img { width:205px; } h1 { font-size:clamp(39px,12vw,54px); } .examples-list { grid-template-columns:1fr; } .area { padding:22px; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
 </head>
-<body>
-  <div class="wrap">
-    <header>
-      <div class="brand" aria-label="Beyond Norms">
-        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
-          <circle cx="24" cy="32" r="16" fill="none" stroke="#d58a1f" stroke-width="8" />
-          <circle cx="40" cy="32" r="16" fill="none" stroke="#a33a2b" stroke-width="8" />
-        </svg>
-        <div class="brand-name">Beyond Norms</div>
-      </div>
-    </header>
-
-    <main>
-      <section id="hero">
-        <span class="eyebrow">Beyond Norms</span>
-        <h1>Energikonsulting i fastighetsbranschen</h1>
-        <p class="intro">Beyond Norms är en enkel första sida för Thomas arbete inom energikonsulting i fastighetsbranschen.</p>
-        <p>Den här versionen är medvetet avskalad. Målet är att göra det lätt att förstå inriktningen och lätt att ta kontakt, utan att bygga en tung webbplats från start.</p>
-      </section>
-
-      <section id="om-beyond-norms">
-        <h2>Om Beyond Norms</h2>
-        <p>Beyond Norms är tänkt som en tydlig och rak närvaro på webben för arbete inom energikonsulting. Första versionen behöver inte säga allt. Den ska bara vara tillräckligt tydlig för att bära namn, riktning och kontakt.</p>
-        <p>Det gör sidan enkel att vidareutveckla när fler delar av erbjudandet, uppdragstyper eller referenser ska läggas till senare.</p>
-      </section>
-
-      <section id="inriktning">
-        <h2>Inriktning</h2>
-        <p>Budskapet hålls medvetet stramt i första versionen. Fokus ligger på energikonsulting med koppling till fastighetsbranschen, utan att lova mer än sidan ännu kan bära.</p>
-        <ul class="focus-list">
-          <li>energikonsulting</li>
-          <li>fastighetsbranschen</li>
-          <li>enkel och tydlig kontakt</li>
-          <li>lätt att bygga vidare i separat repo</li>
-        </ul>
-      </section>
-
-      <section id="kontakt">
-        <h2>Kontakt</h2>
-        <p>Om du vill ta kontakt går det bra via mail, WhatsApp eller telefon.</p>
-        <ul class="contact-list">
-          <li><strong>Mail:</strong> <a href="mailto:thomas.l.bn@outlook.com">thomas.l.bn@outlook.com</a></li>
-          <li><strong>WhatsApp:</strong> <a href="https://wa.me/46739441350">+46 73 944 13 50</a></li>
-          <li><strong>Telefon:</strong> <a href="tel:+66810455173">+66 81 045 51 73</a></li>
-        </ul>
-      </section>
-    </main>
-
-    <footer>
-      Beyond Norms — energikonsulting i fastighetsbranschen
-    </footer>
-  </div>
-</body>
+<body><div class="wrap">
+  <header class="site-header"><a class="brand" href="/sv/" aria-label="Beyond Norms — startsida"><img src="logo.svg" alt="Beyond Norms" width="318" height="57" /></a></header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title"><p class="eyebrow">Energikonsult för fastigheter</p><h1 id="hero-title">Energi, teknik och data som fungerar tillsammans.</h1><p class="lead">Jag hjälper fastighetsägare och projektorganisationer med energi, fastighetsteknik och data – från energiberäkningar och energisamordning i byggprojekt till uppföljning, tekniska system och digitalisering.</p></section>
+    <section class="areas" aria-label="Kompetensområden"><article class="area"><h2>Energi</h2><p>Energiberäkningar · granskning · energikrav · uppföljning</p></article><article class="area"><h2>Bygg &amp; fastighetsteknik</h2><p>Energisamordning · styrning och övervakning · tekniska system · mätdata</p></article><article class="area"><h2>Data &amp; digitalisering</h2><p>Strukturerad fastighetsdata · analys · datakvalitet · automatisering</p></article></section>
+    <section class="story" aria-labelledby="story-title"><h2 id="story-title">Från byggprojekt till befintlig fastighet.</h2><p>Energi finns med genom hela fastighetens livscykel. Jag arbetar med energifrågor i bygg- och utvecklingsprojekt och i befintliga fastigheter – från kravställning och energisamordning till tekniska system, data och uppföljning.</p></section>
+    <section class="examples" aria-labelledby="examples-title"><h2 id="examples-title">Exempel på uppdrag</h2><ul class="examples-list"><li>Energiberäkningar och granskning</li><li>Energi och fastighetsdata</li><li>Tekniska krav och rambeskrivningar</li><li>Digitalisering av fastighetsdrift</li></ul></section>
+    <section class="contact" aria-labelledby="contact-title"><div><p class="eyebrow">Kontakt</p><h2 id="contact-title">Har du en energi- eller fastighetsteknisk fråga?</h2><p>Hör gärna av dig.</p></div><div class="contact-details"><a href="mailto:thomas.l.bn@outlook.com">thomas.l.bn@outlook.com</a><a href="tel:+66810455173">Telefon: +66 81 045 51 73</a><a href="https://wa.me/46739441350">WhatsApp: +46 73 944 13 50</a></div></section>
+  </main><footer>Beyond Norms · Energi · Fastighet · Data</footer>
+</div></body>
 </html>
